@@ -1,0 +1,15 @@
+fixation_detection('data_stimulus_demo.txt',0.250,0.100,150,1.25,1.00);
+
+heatmap_generator('data_heatmap_demo.txt','stimulus_heatmap_demo.bmp',0.25/4,1.25,1.00,5,3);
+
+metrics_analysis(load('fixations_list_demo.txt'),0.10,0.25,0.25,1.25,1.00);
+
+ROI_analysis(load('fixations_list_demo.txt'),'ROIS_demo.txt',2);
+
+angle_to_tracker(8,555,301.1)
+
+visualizations('data_stimulus_demo.txt',load('fixations_list_demo.txt'),0.1)
+
+visualizations_stimulus('data_stimulus_demo.txt','stimulus_demo.bmp',load('fixations_list_demo.txt'),100)
+
+In order to run the above function, place demo data in the same folder with EyeMMV's functions
