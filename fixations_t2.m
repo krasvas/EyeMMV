@@ -65,7 +65,7 @@ for i=1:number_t1
     if fixations_id(i,4)>0
         fixations_list_t2=[fixations_list_t2;fixations_id(i,:)];
     else
-        list_out_points=[list_out_points;;fixations_id(i,:)];
+        list_out_points=[list_out_points;fixations_id(i,:)];
     end
 end
 n=size(fixations_list_t2);
@@ -76,9 +76,17 @@ number_t2=size(fixations_list_t2);
 number_t2=number_t2(1,1);
 fixx=mean(fixations_list_t2(:,1));
 fixy=mean(fixations_list_t2(:,2));
+
+
+if number_t2>0
 start_time=fixations_list_t2(1,3);
 end_time=fixations_list_t2(number_t2,3);
 duration=fixations_list_t2(number_t2,3)-fixations_list_t2(1,3);
+else
+    start_time=0;
+    end_time=0;
+    duration=0;
+end
 
 
 list_out_points;
