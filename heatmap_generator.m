@@ -95,8 +95,8 @@ R=zeros(n_1_scene,n_2_scene);
 G=zeros(n_1_scene,n_2_scene);
 B=zeros(n_1_scene,n_2_scene);
 
-for i=1:1024
-    for j=1:1280
+for i=1:n_1_scene
+    for j=1:n_2_scene
         if (heatmap(i,j)==0 || heatmap(i,j)>0) && (heatmap(i,j)==25 || heatmap(i,j)<25)
             R(i,j)=10;
             G(i,j)=10;
