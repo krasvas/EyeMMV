@@ -131,7 +131,7 @@ fprintf('  Maximum Coordinate in Vertical Dimension: %.2f\n\n',maxy)
 
 fprintf('Number of Raw Data: %.f\n',n)
 fprintf('Number of Data used in the analysis(t1,t2,minDur): %.f\n',sum(fixation_list_t2(:,4)))
-fprintf('Number of Data used in the analysis(t1,3s,minDur): %.f\n',sum(fixation_list_t2(:,4)))
+fprintf('Number of Data used in the analysis(t1,3s,minDur): %.f\n',sum(fixation_list_3s(:,4)))
 
 fprintf('\nFixations: \n')
 fprintf('  Total Number of Fixations(t1,t2,minDur): %.f\n',n_t2)
